@@ -4,6 +4,7 @@ const game = {
 	answer 		: "",
 	display 	: "",
 	index 		: 0,
+	points		: 0,
 	showLetter 	:[],
 
 	startGame: function() {
@@ -25,6 +26,7 @@ const game = {
 		guess = "";
 		guess = text.value;
 		guess = guess.toLowerCase();
+		win = 0;
 		//document.getElementById("testDisplay").innerHTML = guess;
 		document.getElementById("word").innerHTML = "";
 
@@ -45,10 +47,27 @@ const game = {
 			}
 			if(this.showLetter[y] == 1) {
 				document.getElementById("word").innerHTML += this.answer[y];
+				win++;
 			}
 		}
-	} 
 
+		if(win == num)
+		{
+			this.win();
+		}
+
+	},
+	
+	win(){
+
+		this.points++;
+		for(x = 0; x < this.answer.length; x++){
+			this.showLetter.pop(x);			
+		}
+		this.startGame();
+	}
+		
+	
 }
 	
 
