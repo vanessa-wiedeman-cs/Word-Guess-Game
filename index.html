@@ -3,11 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Word Guess Game</title>
-
+	<script src="assets/javascript/game.js"></script>
 
 </head>
 
 <body>
+
+	<h1>Guess the Word I'm thinking of OooOooOooOo</h1>
+	<h2><span id="word" style="letter-spacing: 3px;">???????</h2>
+	
+	<p>Guess a Letter!</p>
+	<input id="letter" type="text" name="guess" value="letter here!">
+	<br>
+	<br>
+	<button type="button" onclick="game.guess();">Guess</button>
+	<br>
+	<br>
+	<button type="button" onclick="game.startGame();">Start Game!</button>
+	<br>
+
+	<p id="testDisplay"></p>
 
 
 </body>
