@@ -18,10 +18,14 @@
 	background-repeat: no-repeat; background-size:contain; width:80%; height: auto; margin:auto;">
 -->
 
-<div class="container overflow-auto card bg-dark text-white" style="margin:auto; height: 100%;">
+<div class="container overflow-auto card bg-dark text-white" style="margin:auto; padding-bottom: 30%;">
 		<img class="card-img" src="assets/images/pumpkin.jpg" alt="Card image">
 		<div class="card-img-overlay">
 
+		<div class="text-center">
+		<button type="button" class="btn btn-light mx-auto" onclick="game.startGame();">Start Game!</button>
+		</div>
+		<br>
 		<h1 class="text-center">Guess the Word I'm thinking <br> of OooOooOooOo</h1>
 		<h2><span id="word" style="letter-spacing: 3px;">???????</h2>
 		
@@ -32,12 +36,11 @@
 		<button type="button" class="btn btn-light" onclick="game.guess();">Guess</button>
 		<br>
 		<br>
-		<button type="button" class="btn btn-light" onclick="game.startGame();">Start Game!</button>
-		<br>
 
 		<p id="testDisplay">Wins: </p>
 		<p id="lose">Losses: </p>
 		<p id="lastGuess">Last Guess: </p>
+		<p id="guessesLeft">Guesses Left: 10</p>
 		
 
 </div>

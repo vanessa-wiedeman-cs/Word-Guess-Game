@@ -38,6 +38,7 @@ const game = {
 			//document.getElementById("testDisplay").innerHTML = guess;
 			document.getElementById("word").innerHTML = "";
 			document.getElementById("lastGuess").innerHTML += guess + " ";
+			document.getElementById("guessesLeft").innerHTML = "Guesses Left: " + this.guessLeft;
 
 			num = this.answer.length;
 			
@@ -60,6 +61,8 @@ const game = {
 				}
 			}
 
+			document.getElementById("letter").value = "";
+
 			if(win == num)
 			{
 				this.win();
@@ -78,6 +81,7 @@ const game = {
 		this.guessLeft = 10;
 		document.getElementById("testDisplay").innerHTML = "Points: " + this.points;
 		document.getElementById("lastGuess").innerHTML = "Last Guess: ";
+		document.getElementById("guessesLeft").innerHTML = "Guesses Left: " + this.guessLeft;
 		for(x = 0; x < this.answer.length; x++){
 			this.showLetter.pop(x);			
 		}
@@ -91,6 +95,7 @@ const game = {
 		document.getElementById("testDisplay").innerHTML = "Points: " + this.points;
 		document.getElementById("lose").innerHTML = "Losses: " + this.loss;
 		document.getElementById("lastGuess").innerHTML = "Last Guess: ";
+		document.getElementById("guessesLeft").innerHTML = "Guesses Left: " + this.guessLeft;
 		for(x = 0; x < this.answer.length; x++){
 			this.showLetter.pop(x);			
 		}
