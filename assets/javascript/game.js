@@ -5,6 +5,7 @@ const game = {
 	display 	: "",
 	index 		: 0,
 	points		: 0,
+	loss		: 0,
 	guessLeft	: 10,
 	showLetter 	:[],
 
@@ -85,8 +86,10 @@ const game = {
 
 	lose()
 	{
+		this.loss++;
 		this.guessLeft = 10;
 		document.getElementById("testDisplay").innerHTML = "Points: " + this.points;
+		document.getElementById("lose").innerHTML = "Losses: " + this.loss;
 		document.getElementById("lastGuess").innerHTML = "Last Guess: ";
 		for(x = 0; x < this.answer.length; x++){
 			this.showLetter.pop(x);			
