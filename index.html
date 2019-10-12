@@ -9,10 +9,11 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body style="background-image: url('assets/images/ghostbackground.jpg')">
+<body style="background-image: url('assets/images/ghostbackground.jpg')"
+	  class="text-white">
 
-<div style="background-image: url('assets/images/pumpkin.jpg')" 
-style="background-repeat: no-repeat; background-size:cover; max-width:100%; height: auto;">
+<div style="background-image: url('assets/images/pumpkin.jpg'); 
+	background-repeat: no-repeat; background-size:contain; width:80%; height: auto; margin:auto;">
 
 	<h1>Guess the Word I'm thinking of OooOooOooOo</h1>
 	<h2><span id="word" style="letter-spacing: 3px;">???????</h2>
@@ -21,14 +22,15 @@ style="background-repeat: no-repeat; background-size:cover; max-width:100%; heig
 	<input id="letter" type="text" name="guess" value="letter here!">
 	<br>
 	<br>
-	<button type="button" onclick="game.guess();">Guess</button>
+	<button type="button" class="btn btn-light" onclick="game.guess();">Guess</button>
 	<br>
 	<br>
-	<button type="button" onclick="game.startGame();">Start Game!</button>
+	<button type="button" class="btn btn-light" onclick="game.startGame();">Start Game!</button>
 	<br>
 
-	<p id="testDisplay"></p>
-
+	<p id="testDisplay">Points: </p>
+	<p id="lastGuess">Last Guess: </p>
+	 
 
 </div>
 

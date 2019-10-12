@@ -29,13 +29,14 @@ const game = {
 		win = 0;
 		//document.getElementById("testDisplay").innerHTML = guess;
 		document.getElementById("word").innerHTML = "";
+		document.getElementById("lastGuess").innerHTML += guess + " ";
 
 		num = this.answer.length;
 		
 		//document.getElementById("testDisplay").innerHTML = num;
 
 		for(x = 0; x < num; x++) {
-			document.getElementById("testDisplay").innerHTML = x + "<br>"
+			document.getElementById("testDisplay").innerHTML = x + "<br>";
 			if(guess == this.answer[x]) {
 				this.showLetter[x] = 1;
 			}	
@@ -54,6 +55,7 @@ const game = {
 		if(win == num)
 		{
 			this.win();
+			document.getElementById("lastGuess").innerHTML = "Last Guess: "
 		}
 
 	},
