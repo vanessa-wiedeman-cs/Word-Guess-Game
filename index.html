@@ -12,25 +12,32 @@
 <body style="background-image: url('assets/images/ghostbackground.jpg')"
 	  class="text-white">
 
-<div style="background-image: url('assets/images/pumpkin.jpg'); 
+
+<!--- 
+<div class="align-center" style="background-image: url('assets/images/pumpkin.jpg'); 
 	background-repeat: no-repeat; background-size:contain; width:80%; height: auto; margin:auto;">
+-->
 
-	<h1>Guess the Word I'm thinking of OooOooOooOo</h1>
-	<h2><span id="word" style="letter-spacing: 3px;">???????</h2>
-	
-	<p>Guess a Letter!</p>
-	<input id="letter" type="text" name="guess" value="letter here!">
-	<br>
-	<br>
-	<button type="button" class="btn btn-light" onclick="game.guess();">Guess</button>
-	<br>
-	<br>
-	<button type="button" class="btn btn-light" onclick="game.startGame();">Start Game!</button>
-	<br>
+<div class="card bg-dark text-white w-50 p-3" style="margin:auto;">
+		<img class="card-img" src="assets/images/pumpkin.jpg" alt="Card image">
+		<div class="card-img-overlay">
 
-	<p id="testDisplay">Points: </p>
-	<p id="lastGuess">Last Guess: </p>
-	 
+		<h1 class="text-center">Guess the Word I'm thinking <br> of OooOooOooOo</h1>
+		<h2><span id="word" style="letter-spacing: 3px;">???????</h2>
+		
+		<p>Guess a Letter!</p>
+		<input id="letter" type="text" name="guess" value="letter here!">
+		<br>
+		<br>
+		<button type="button" class="btn btn-light" onclick="game.guess();">Guess</button>
+		<br>
+		<br>
+		<button type="button" class="btn btn-light" onclick="game.startGame();">Start Game!</button>
+		<br>
+
+		<p id="testDisplay">Points: </p>
+		<p id="lastGuess">Last Guess: </p>
+		
 
 </div>
 
