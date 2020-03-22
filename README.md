@@ -11,10 +11,10 @@ Project Requirements:
 
 - Requirements:
 
-  - Bootstrap
+  - Bootstrap 
   
-  - Javascript
+  - Javascript 
 
-  - Deployed (GitHub Pages)
+  - Deployed (GitHub Pages) 
   
   
