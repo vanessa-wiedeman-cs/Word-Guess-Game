@@ -1,6 +1,6 @@
 # Word Guess Game
 
-Project Requirements:
+Project Requirements: 
 
 - Project Goal: 
 
