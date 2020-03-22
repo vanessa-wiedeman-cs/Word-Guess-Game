@@ -1,4 +1,4 @@
-# Test-Project-1
+# Word Guess Game
 
 Project Requirements:
 
