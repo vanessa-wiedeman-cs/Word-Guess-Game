@@ -2,7 +2,7 @@
 
 Project Requirements:
 
-- Project Goal:
+- Project Goal: 
 
   - Build a website that allows the user to play a word guess game. Users have ten guesses, and each letter guess will be displayed. 
   
